@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- CUSTOM CURSOR (data theme) ---------- */
   const cross = document.querySelector('[data-cursor-cross]');
-  const coord = document.querySelector('[data-cursor-coord]');
   const trailWrap = document.querySelector('[data-cursor-trail]');
-  if (cross && coord && trailWrap && !reduceMotion && matchMedia('(hover:hover)').matches) {
+  if (cross && trailWrap && !reduceMotion && matchMedia('(hover:hover)').matches) {
     const TRAIL_LEN = 7;
     const nodes = [];
     for (let i = 0; i < TRAIL_LEN; i++) {
@@ -29,18 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
       nodes.push({ el: n, x: 0, y: 0 });
     }
 
-    let mx = 0, my = 0, shown = false;
+    let mx = 0, my = 0;
 
     window.addEventListener('mousemove', e => {
       mx = e.clientX; my = e.clientY;
       cross.style.left = mx + 'px'; cross.style.top = my + 'px';
-      coord.style.left = mx + 'px'; coord.style.top = my + 'px';
-      coord.textContent = `X ${String(Math.round(mx)).padStart(3, '0')} · Y ${String(Math.round(my)).padStart(3, '0')}`;
-      if (!shown) { coord.classList.add('is-visible'); shown = true; }
       nodes.forEach(n => { if (n.x === 0 && n.y === 0) { n.x = mx; n.y = my; } });
     });
-
-    window.addEventListener('mouseleave', () => coord.classList.remove('is-visible'));
 
     function loop() {
       let targetX = mx, targetY = my;
@@ -60,14 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- SERVICE CARD SPOTLIGHT ---------- */
-  document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
-    });
-  });
   if (!reduceMotion && matchMedia('(hover:hover)').matches) {
     document.querySelectorAll('[data-magnetic]').forEach(el => {
       el.addEventListener('mousemove', e => {
@@ -205,26 +191,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.6 });
   counters.forEach(el => cIo.observe(el));
 
-  /* ---------- SKILL PULSE WAVEFORMS ---------- */
-  const pulseWaves = document.querySelectorAll('[data-pulse-wave]');
-  const pIo = new IntersectionObserver((entries) => {
+  /* ---------- SKILL DONUT CHARTS ---------- */
+  const donuts = document.querySelectorAll('[data-donut]');
+  const dIo = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       const el = entry.target;
       const val = parseFloat(el.dataset.value);
-      const amp = 0.32 + Math.pow(val / 100, 1.6) * 1.05;
-      const line = el.querySelector('.wave-line');
-      if (line) {
-        line.style.transition = 'transform 1s var(--ease-spring)';
-        line.style.transform = 'scaleY(0.15)';
-        requestAnimationFrame(() => {
-          setTimeout(() => { line.style.transform = `scaleY(${amp})`; }, 60);
-        });
+      const progress = el.querySelector('[data-donut-progress]');
+      const tip = el.querySelector('[data-donut-tip]');
+      if (progress) {
+        const circumference = parseFloat(progress.getAttribute('stroke-dasharray'));
+        const offset = circumference * (1 - val / 100);
+        requestAnimationFrame(() => { progress.style.strokeDashoffset = offset; });
       }
-      pIo.unobserve(el);
+      if (tip) {
+        const angleDeg = (val / 100) * 360;
+        const angleRad = (angleDeg * Math.PI) / 180;
+        const cx = 60, cy = 60, r = 50;
+        const tx = cx + r * Math.sin(angleRad);
+        const ty = cy - r * Math.cos(angleRad);
+        tip.setAttribute('cx', tx.toFixed(2));
+        tip.setAttribute('cy', ty.toFixed(2));
+      }
+      setTimeout(() => el.classList.add('is-active'), 1300);
+      dIo.unobserve(el);
     });
   }, { threshold: 0.4 });
-  pulseWaves.forEach(el => pIo.observe(el));
+  donuts.forEach(el => dIo.observe(el));
 
   /* ---------- PROJECT PREVIEW MODAL ---------- */
   const previewOverlay = document.querySelector('[data-preview-overlay]');

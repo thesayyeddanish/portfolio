@@ -7,7 +7,7 @@
 <meta name="description" content="Danish Sayyed — Senior Data Analyst. Real-time sports analytics, dashboards and data storytelling.">
 <title>Danish Sayyed</title>
 <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/style.css?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -121,25 +121,28 @@
     <div class="wrap">
       <div class="section-head section-head--wide" data-reveal>
         <div class="eyebrow">About</div>
-        <h2><span class="lead">Data with context, not just charts</span><span class="sub"> — engineer-turned-analyst, allergic to dashboards that look pretty but say nothing.</span></h2>
+        <h2><span class="lead">Data with context, not just charts</span><br><span class="sub">— engineer-turned-analyst, allergic to dashboards that look pretty but say nothing.</span></h2>
       </div>
 
       <div class="about-grid">
         <div class="about-card glass" data-reveal="left">
-          <div class="about-avatar"><img src="./assets/images/danishface.png" alt="Danish Sayyed"></div>
-          <h3>Danish Sayyed</h3>
-          <div class="role">Senior Data Analyst</div>
-          <ul class="about-meta">
-            <li><ion-icon name="mail-outline"></ion-icon> <a href="mailto:thesayyeddanish@gmail.com">thesayyeddanish@gmail.com</a></li>
-            <li><ion-icon name="call-outline"></ion-icon> <a href="tel:+919322277244">+91 9322 277 244</a></li>
-            <li><ion-icon name="location-outline"></ion-icon> <address>Mumbai, India</address></li>
-            <li><ion-icon name="calendar-outline"></ion-icon> July 24, 1997</li>
-          </ul>
-          <div class="about-social">
-            <a href="https://facebook.com/danishsayyed" target="_blank" rel="noopener" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://instagram.com/danishsayyed" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://linkedin.com/in/danishsayyed" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://twitter.com/danishsayyed" target="_blank" rel="noopener" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+          <img class="about-decor" src="./assets/images/danish-duotone.png" alt="" aria-hidden="true">
+          <div class="about-card-content">
+            <div class="about-avatar"><img src="./assets/images/danishface.png" alt="Danish Sayyed"></div>
+            <h3>Danish Sayyed</h3>
+            <div class="role">Senior Data Analyst</div>
+            <ul class="about-meta">
+              <li><ion-icon name="mail-outline"></ion-icon> <a href="mailto:thesayyeddanish@gmail.com">thesayyeddanish@gmail.com</a></li>
+              <li><ion-icon name="call-outline"></ion-icon> <a href="tel:+919322277244">+91 9322 277 244</a></li>
+              <li><ion-icon name="location-outline"></ion-icon> <address>Mumbai, India</address></li>
+              <li><ion-icon name="calendar-outline"></ion-icon> July 24, 1997</li>
+            </ul>
+            <div class="about-social">
+              <a href="https://facebook.com/danishsayyed" target="_blank" rel="noopener" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://instagram.com/danishsayyed" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://linkedin.com/in/danishsayyed" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="https://twitter.com/danishsayyed" target="_blank" rel="noopener" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
           </div>
         </div>
 
@@ -400,11 +403,8 @@
             <img src="./assets/images/heist.png" alt="Money Heist" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Money Heist" data-desc="Viz that tells the story of the data behind TV shows you love. When it comes to TV Series, Money Heist has always been one of my most recent favorites." data-img="./assets/images/heist.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MoneyHeistDataTVChallenge/MoneyHeist" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Money Heist" data-desc="Viz that tells the story of the data behind TV shows you love. When it comes to TV Series, Money Heist has always been one of my most recent favorites." data-img="./assets/images/heist.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MoneyHeistDataTVChallenge/MoneyHeist" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Money Heist" data-desc="Viz that tells the story of the data behind TV shows you love. When it comes to TV Series, Money Heist has always been one of my most recent favorites." data-img="./assets/images/heist.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MoneyHeistDataTVChallenge/MoneyHeist" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -424,11 +424,8 @@
             <img src="./assets/images/everest.png" alt="Survival and Glory - The Everest Story" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Survival and Glory - The Everest Story" data-desc="A single page infographic visual showcasing the numbers behind the ultimate glory to reach the top of the world." data-img="./assets/images/everest.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheEverestStory/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Survival and Glory - The Everest Story" data-desc="A single page infographic visual showcasing the numbers behind the ultimate glory to reach the top of the world." data-img="./assets/images/everest.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheEverestStory/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Survival and Glory - The Everest Story" data-desc="A single page infographic visual showcasing the numbers behind the ultimate glory to reach the top of the world." data-img="./assets/images/everest.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheEverestStory/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -448,11 +445,8 @@
             <img src="./assets/images/socialmedia.png" alt="Social Media Analytics" loading="lazy">
             <span class="card-tag">Power BI</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Social Media Analytics" data-desc="This comprehensive social media analytics dashboard tracks global platform performance, content intelligence, and engagement trends, highlighting key metrics like click-through rates and high-performing hashtags to optimize multi-channel digital strategies." data-img="./assets/images/socialmedia.png" data-href="https://app.powerbi.com/view?r=eyJrIjoiZjJmNzEwYjUtNjNlOS00MWUxLTk4NWMtNDc5NjM1NTlhZTAyIiwidCI6IjkyZWU4ZmZkLTc0NDQtNGIyYi04Nzg5LTkwOTI2OTJjZDU1MiJ9" data-label="Power BI" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Social Media Analytics" data-desc="This comprehensive social media analytics dashboard tracks global platform performance, content intelligence, and engagement trends, highlighting key metrics like click-through rates and high-performing hashtags to optimize multi-channel digital strategies." data-img="./assets/images/socialmedia.png" data-href="https://app.powerbi.com/view?r=eyJrIjoiZjJmNzEwYjUtNjNlOS00MWUxLTk4NWMtNDc5NjM1NTlhZTAyIiwidCI6IjkyZWU4ZmZkLTc0NDQtNGIyYi04Nzg5LTkwOTI2OTJjZDU1MiJ9" data-label="Power BI" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Social Media Analytics" data-desc="This comprehensive social media analytics dashboard tracks global platform performance, content intelligence, and engagement trends, highlighting key metrics like click-through rates and high-performing hashtags to optimize multi-channel digital strategies." data-img="./assets/images/socialmedia.png" data-href="https://app.powerbi.com/view?r=eyJrIjoiZjJmNzEwYjUtNjNlOS00MWUxLTk4NWMtNDc5NjM1NTlhZTAyIiwidCI6IjkyZWU4ZmZkLTc0NDQtNGIyYi04Nzg5LTkwOTI2OTJjZDU1MiJ9" data-label="Power BI" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -472,11 +466,8 @@
             <img src="./assets/images/pixar.png" alt="30 years of the PIXAR journey" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="30 years of the PIXAR journey" data-desc="This series of dashboards provides a comprehensive multi-departmental overview, integrating high-level sales performance, inventory tracking, financial summaries, and operational efficiency metrics into a unified, data-driven analytical reporting system." data-img="./assets/images/pixar.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/PixarChallenge_17427535605440/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="30 years of the PIXAR journey" data-desc="This series of dashboards provides a comprehensive multi-departmental overview, integrating high-level sales performance, inventory tracking, financial summaries, and operational efficiency metrics into a unified, data-driven analytical reporting system." data-img="./assets/images/pixar.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/PixarChallenge_17427535605440/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="30 years of the PIXAR journey" data-desc="This series of dashboards provides a comprehensive multi-departmental overview, integrating high-level sales performance, inventory tracking, financial summaries, and operational efficiency metrics into a unified, data-driven analytical reporting system." data-img="./assets/images/pixar.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/PixarChallenge_17427535605440/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -496,11 +487,8 @@
             <img src="./assets/images/mobile.png" alt="Mobile Sales Dashboard" loading="lazy">
             <span class="card-tag">Power BI</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Mobile Sales Dashboard" data-desc="This mobile-optimized dashboard provides a streamlined overview of sales and profit performance, featuring dynamic geographical maps, customer segment breakdowns, and monthly trends to enable real-time, data-driven decision-making." data-img="./assets/images/mobile.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HealthcareDashboard_17445764887880/DB1" data-label="Power BI" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Mobile Sales Dashboard" data-desc="This mobile-optimized dashboard provides a streamlined overview of sales and profit performance, featuring dynamic geographical maps, customer segment breakdowns, and monthly trends to enable real-time, data-driven decision-making." data-img="./assets/images/mobile.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HealthcareDashboard_17445764887880/DB1" data-label="Power BI" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Mobile Sales Dashboard" data-desc="This mobile-optimized dashboard provides a streamlined overview of sales and profit performance, featuring dynamic geographical maps, customer segment breakdowns, and monthly trends to enable real-time, data-driven decision-making." data-img="./assets/images/mobile.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HealthcareDashboard_17445764887880/DB1" data-label="Power BI" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -520,11 +508,8 @@
             <img src="./assets/images/crime.png" alt="Washington Crime Data" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Washington Crime Data" data-desc="This dashboard visualizes Washington’s crime landscape by tracking total incidents, clearance rates, and yearly trends across major categories like property and violent crimes to assist in public safety analysis." data-img="./assets/images/crime.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WashingtonCrimeData/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Washington Crime Data" data-desc="This dashboard visualizes Washington’s crime landscape by tracking total incidents, clearance rates, and yearly trends across major categories like property and violent crimes to assist in public safety analysis." data-img="./assets/images/crime.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WashingtonCrimeData/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Washington Crime Data" data-desc="This dashboard visualizes Washington’s crime landscape by tracking total incidents, clearance rates, and yearly trends across major categories like property and violent crimes to assist in public safety analysis." data-img="./assets/images/crime.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WashingtonCrimeData/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -544,11 +529,8 @@
             <img src="./assets/images/mta.png" alt="MTA Post-Pandemic Ridership Recovery" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="MTA Post-Pandemic Ridership Recovery" data-desc="This interactive transportation dashboard monitors Metropolitan Transportation Authority performance, tracking monthly ridership and service reliability across subways and buses to evaluate post-pandemic recovery and long-term transit efficiency." data-img="./assets/images/mta.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MTA_17313195085590/Overview" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="MTA Post-Pandemic Ridership Recovery" data-desc="This interactive transportation dashboard monitors Metropolitan Transportation Authority performance, tracking monthly ridership and service reliability across subways and buses to evaluate post-pandemic recovery and long-term transit efficiency." data-img="./assets/images/mta.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MTA_17313195085590/Overview" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="MTA Post-Pandemic Ridership Recovery" data-desc="This interactive transportation dashboard monitors Metropolitan Transportation Authority performance, tracking monthly ridership and service reliability across subways and buses to evaluate post-pandemic recovery and long-term transit efficiency." data-img="./assets/images/mta.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MTA_17313195085590/Overview" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -568,11 +550,8 @@
             <img src="./assets/images/supply.png" alt="Supply Chain Analytics" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Supply Chain Analytics" data-desc="This interactive supply chain dashboard monitors critical logistics KPIs, including fulfillment rates, inventory levels, and freight costs, to optimize warehouse efficiency and ensure timely global product distribution and delivery." data-img="./assets/images/supply.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SupplyChain_17308303434470/OVERVIEW" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Supply Chain Analytics" data-desc="This interactive supply chain dashboard monitors critical logistics KPIs, including fulfillment rates, inventory levels, and freight costs, to optimize warehouse efficiency and ensure timely global product distribution and delivery." data-img="./assets/images/supply.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SupplyChain_17308303434470/OVERVIEW" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Supply Chain Analytics" data-desc="This interactive supply chain dashboard monitors critical logistics KPIs, including fulfillment rates, inventory levels, and freight costs, to optimize warehouse efficiency and ensure timely global product distribution and delivery." data-img="./assets/images/supply.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SupplyChain_17308303434470/OVERVIEW" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -592,11 +571,8 @@
             <img src="./assets/images/pictures.png" alt="Best Pictures since 2000" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Best Pictures since 2000" data-desc="Dive into the top 1000 movies by vote count since 2000 with the winner and nominations every year" data-img="./assets/images/pictures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/IMDBTop1000Moviessince2000/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Best Pictures since 2000" data-desc="Dive into the top 1000 movies by vote count since 2000 with the winner and nominations every year" data-img="./assets/images/pictures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/IMDBTop1000Moviessince2000/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Best Pictures since 2000" data-desc="Dive into the top 1000 movies by vote count since 2000 with the winner and nominations every year" data-img="./assets/images/pictures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/IMDBTop1000Moviessince2000/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -616,11 +592,8 @@
             <img src="./assets/images/lego.png" alt="Maven Analytics - LEGO Challenge" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Maven Analytics - LEGO Challenge" data-desc="Exploring the colorful journey of LEGO! From its humble beginnings in 1970 to becoming a global phenomenon." data-img="./assets/images/lego.png" data-href="https://public.tableau.com/views/EDA-Lego/Lego?:language=en-US&:display_count=n&:origin=viz_share_link" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Maven Analytics - LEGO Challenge" data-desc="Exploring the colorful journey of LEGO! From its humble beginnings in 1970 to becoming a global phenomenon." data-img="./assets/images/lego.png" data-href="https://public.tableau.com/views/EDA-Lego/Lego?:language=en-US&:display_count=n&:origin=viz_share_link" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Maven Analytics - LEGO Challenge" data-desc="Exploring the colorful journey of LEGO! From its humble beginnings in 1970 to becoming a global phenomenon." data-img="./assets/images/lego.png" data-href="https://public.tableau.com/views/EDA-Lego/Lego?:language=en-US&:display_count=n&:origin=viz_share_link" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -640,11 +613,8 @@
             <img src="./assets/images/udemy.png" alt="Udemy Courses Analysis" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Udemy Courses Analysis" data-desc="Unveil the Udemy landscape with my comprehensive tableau dashboard, revealing trends, patterns, and insights that go beyond the surface. Harness the power of data to make informed decisions and drive success in the online learning space." data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/UdemyCoursesAnalysis_17043041135760/Overview" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Udemy Courses Analysis" data-desc="Unveil the Udemy landscape with my comprehensive tableau dashboard, revealing trends, patterns, and insights that go beyond the surface. Harness the power of data to make informed decisions and drive success in the online learning space." data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/UdemyCoursesAnalysis_17043041135760/Overview" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Udemy Courses Analysis" data-desc="Unveil the Udemy landscape with my comprehensive tableau dashboard, revealing trends, patterns, and insights that go beyond the surface. Harness the power of data to make informed decisions and drive success in the online learning space." data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/UdemyCoursesAnalysis_17043041135760/Overview" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -664,11 +634,8 @@
             <img src="./assets/images/udemy.png" alt="The Bus-tling Network of Mumbai and Pune" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="The Bus-tling Network of Mumbai and Pune" data-desc="Visual representation of the coverage of bus stops in both the cities" data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MumbaiPuneBusCoverage/Bus-tlingNetwork" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="The Bus-tling Network of Mumbai and Pune" data-desc="Visual representation of the coverage of bus stops in both the cities" data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MumbaiPuneBusCoverage/Bus-tlingNetwork" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="The Bus-tling Network of Mumbai and Pune" data-desc="Visual representation of the coverage of bus stops in both the cities" data-img="./assets/images/udemy.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MumbaiPuneBusCoverage/Bus-tlingNetwork" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -688,11 +655,8 @@
             <img src="./assets/images/power.png" alt="USA Power Outages (2002-23)" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="USA Power Outages (2002-23)" data-desc="A 4-page interactive Tableau report to evaluate the severity of the US Power outages over the last 20 years. Did if affect specific regions and events?" data-img="./assets/images/power.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/USPowerOutage2002-23/OVERVIEW" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="USA Power Outages (2002-23)" data-desc="A 4-page interactive Tableau report to evaluate the severity of the US Power outages over the last 20 years. Did if affect specific regions and events?" data-img="./assets/images/power.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/USPowerOutage2002-23/OVERVIEW" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="USA Power Outages (2002-23)" data-desc="A 4-page interactive Tableau report to evaluate the severity of the US Power outages over the last 20 years. Did if affect specific regions and events?" data-img="./assets/images/power.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/USPowerOutage2002-23/OVERVIEW" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -712,11 +676,8 @@
             <img src="./assets/images/fab4.png" alt="The Fabulous Four" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="The Fabulous Four" data-desc="Do we perhaps elevate the Fab-4 too high, considering players like David Warner, Rohit Sharma, Babar Azam and Quinton de Kock often underrated in comparison? As these legends eventually exit the field, will a new &quot;FAB-4&quot; emerge? Can players like Kusal Mendis, Aiden Markram, Shubman Gill, and Harry Brook dominate records across all formats?" data-img="./assets/images/fab4.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheFabulousFour/TheFabulousFour" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="The Fabulous Four" data-desc="Do we perhaps elevate the Fab-4 too high, considering players like David Warner, Rohit Sharma, Babar Azam and Quinton de Kock often underrated in comparison? As these legends eventually exit the field, will a new &quot;FAB-4&quot; emerge? Can players like Kusal Mendis, Aiden Markram, Shubman Gill, and Harry Brook dominate records across all formats?" data-img="./assets/images/fab4.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheFabulousFour/TheFabulousFour" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="The Fabulous Four" data-desc="Do we perhaps elevate the Fab-4 too high, considering players like David Warner, Rohit Sharma, Babar Azam and Quinton de Kock often underrated in comparison? As these legends eventually exit the field, will a new &quot;FAB-4&quot; emerge? Can players like Kusal Mendis, Aiden Markram, Shubman Gill, and Harry Brook dominate records across all formats?" data-img="./assets/images/fab4.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TheFabulousFour/TheFabulousFour" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -736,11 +697,8 @@
             <img src="./assets/images/apple.png" alt="Apple&#x27;s Green Revolution" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Apple&#x27;s Green Revolution" data-desc="An in-depth analysis of Apple&#x27;s carbon emissions data, shedding light on both their impressive achievements and the areas where improvements are needed, Latest product launches, each with a focus on eco-friendly features Compound Annual Growth Rate (CAGR) of Market Capitalization, Revenue and Employees Apple&#x27;s ambitious sustainability goals and the hurdles they face." data-img="./assets/images/apple.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ApplesGreenRevolutionADecadeofZeroCarbonEmissions/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Apple&#x27;s Green Revolution" data-desc="An in-depth analysis of Apple&#x27;s carbon emissions data, shedding light on both their impressive achievements and the areas where improvements are needed, Latest product launches, each with a focus on eco-friendly features Compound Annual Growth Rate (CAGR) of Market Capitalization, Revenue and Employees Apple&#x27;s ambitious sustainability goals and the hurdles they face." data-img="./assets/images/apple.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ApplesGreenRevolutionADecadeofZeroCarbonEmissions/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Apple&#x27;s Green Revolution" data-desc="An in-depth analysis of Apple&#x27;s carbon emissions data, shedding light on both their impressive achievements and the areas where improvements are needed, Latest product launches, each with a focus on eco-friendly features Compound Annual Growth Rate (CAGR) of Market Capitalization, Revenue and Employees Apple&#x27;s ambitious sustainability goals and the hurdles they face." data-img="./assets/images/apple.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ApplesGreenRevolutionADecadeofZeroCarbonEmissions/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -760,11 +718,8 @@
             <img src="./assets/images/youtube.png" alt="Top 1000 Youtubers" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Top 1000 Youtubers" data-desc="Dive into the monthly and yearly earnings of these influencers, uncovering the financial landscape of digital content creation. Track the explosive growth in subscribers and views for the top 1000 YouTubers over the last 30 days. Uncover the relationship between video uploads and total subscribers/views, deciphering the strategies behind digital success." data-img="./assets/images/youtube.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top1000YouTubers/1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Top 1000 Youtubers" data-desc="Dive into the monthly and yearly earnings of these influencers, uncovering the financial landscape of digital content creation. Track the explosive growth in subscribers and views for the top 1000 YouTubers over the last 30 days. Uncover the relationship between video uploads and total subscribers/views, deciphering the strategies behind digital success." data-img="./assets/images/youtube.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top1000YouTubers/1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Top 1000 Youtubers" data-desc="Dive into the monthly and yearly earnings of these influencers, uncovering the financial landscape of digital content creation. Track the explosive growth in subscribers and views for the top 1000 YouTubers over the last 30 days. Uncover the relationship between video uploads and total subscribers/views, deciphering the strategies behind digital success." data-img="./assets/images/youtube.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top1000YouTubers/1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -784,11 +739,8 @@
             <img src="./assets/images/adidas.png" alt="Adidas Sales Analytics" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Adidas Sales Analytics" data-desc="Overview Dashboard: Get a quick snapshot of the key metrics, including sales, units sold, profit, and margin. Sales by Region: Explore the geographical performance of Adidas across different regions within the US. Sales by Product: Discover the top-selling Adidas products and their contribution to overall sales. Sales by Retailer: Analyze how various retailers are driving Adidas sales growth." data-img="./assets/images/adidas.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/AdidasSalesDashboard_16954067057220/Overview" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Adidas Sales Analytics" data-desc="Overview Dashboard: Get a quick snapshot of the key metrics, including sales, units sold, profit, and margin. Sales by Region: Explore the geographical performance of Adidas across different regions within the US. Sales by Product: Discover the top-selling Adidas products and their contribution to overall sales. Sales by Retailer: Analyze how various retailers are driving Adidas sales growth." data-img="./assets/images/adidas.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/AdidasSalesDashboard_16954067057220/Overview" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Adidas Sales Analytics" data-desc="Overview Dashboard: Get a quick snapshot of the key metrics, including sales, units sold, profit, and margin. Sales by Region: Explore the geographical performance of Adidas across different regions within the US. Sales by Product: Discover the top-selling Adidas products and their contribution to overall sales. Sales by Retailer: Analyze how various retailers are driving Adidas sales growth." data-img="./assets/images/adidas.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/AdidasSalesDashboard_16954067057220/Overview" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -808,11 +760,8 @@
             <img src="./assets/images/wtc23.png" alt="World Test Championship 2021-23" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="World Test Championship 2021-23" data-desc="The dashboard covers the questions like: What were the most memorable Matches and Innings? How the captains fared? Finalists vs others, who and why? Team scores by Innings, Grounds and Opponents? Best Partnerships? Best Batters and Bowlers? Best Bowling figures? Win% against each opponent? Series overview, Recent history timeline, Win% overall, Batting first and second with Runs/Wicket, Best Win Margins and highest totals, Team by Team Batter and Bowler analysis, Average scores by Grounds and Opponents" data-img="./assets/images/wtc23.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WTC_16839850652230/MEMORIES" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="World Test Championship 2021-23" data-desc="The dashboard covers the questions like: What were the most memorable Matches and Innings? How the captains fared? Finalists vs others, who and why? Team scores by Innings, Grounds and Opponents? Best Partnerships? Best Batters and Bowlers? Best Bowling figures? Win% against each opponent? Series overview, Recent history timeline, Win% overall, Batting first and second with Runs/Wicket, Best Win Margins and highest totals, Team by Team Batter and Bowler analysis, Average scores by Grounds and Opponents" data-img="./assets/images/wtc23.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WTC_16839850652230/MEMORIES" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="World Test Championship 2021-23" data-desc="The dashboard covers the questions like: What were the most memorable Matches and Innings? How the captains fared? Finalists vs others, who and why? Team scores by Innings, Grounds and Opponents? Best Partnerships? Best Batters and Bowlers? Best Bowling figures? Win% against each opponent? Series overview, Recent history timeline, Win% overall, Batting first and second with Runs/Wicket, Best Win Margins and highest totals, Team by Team Batter and Bowler analysis, Average scores by Grounds and Opponents" data-img="./assets/images/wtc23.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WTC_16839850652230/MEMORIES" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -832,11 +781,8 @@
             <img src="./assets/images/t20wc.png" alt="T20 World Cup 2022 Best XI Analysis" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="T20 World Cup 2022 Best XI Analysis" data-desc="Multi-page dashboard to views stats of all the players role-wise and selection of them into your Final XI to imagine the BEST XI of the tournament at a glance" data-img="./assets/images/t20wc.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/T20WC2022BestXI/Openers" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="T20 World Cup 2022 Best XI Analysis" data-desc="Multi-page dashboard to views stats of all the players role-wise and selection of them into your Final XI to imagine the BEST XI of the tournament at a glance" data-img="./assets/images/t20wc.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/T20WC2022BestXI/Openers" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="T20 World Cup 2022 Best XI Analysis" data-desc="Multi-page dashboard to views stats of all the players role-wise and selection of them into your Final XI to imagine the BEST XI of the tournament at a glance" data-img="./assets/images/t20wc.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/T20WC2022BestXI/Openers" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -856,11 +802,8 @@
             <img src="./assets/images/earthquakes.png" alt="Earthquakes in Turkey (1994 - 2023)" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Earthquakes in Turkey (1994 - 2023)" data-desc="Understanding seismic activity is crucial for preparedness and disaster mitigation. This dashboard is a powerful tool for researchers, policymakers, and anyone interested in the seismic landscape of Turkey." data-img="./assets/images/earthquakes.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TurkeyEarthquakes1994-2023/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Earthquakes in Turkey (1994 - 2023)" data-desc="Understanding seismic activity is crucial for preparedness and disaster mitigation. This dashboard is a powerful tool for researchers, policymakers, and anyone interested in the seismic landscape of Turkey." data-img="./assets/images/earthquakes.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TurkeyEarthquakes1994-2023/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Earthquakes in Turkey (1994 - 2023)" data-desc="Understanding seismic activity is crucial for preparedness and disaster mitigation. This dashboard is a powerful tool for researchers, policymakers, and anyone interested in the seismic landscape of Turkey." data-img="./assets/images/earthquakes.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/TurkeyEarthquakes1994-2023/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -880,11 +823,8 @@
             <img src="./assets/images/leave.png" alt="Maven Analytics - Family Leave Challenge" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Maven Analytics - Family Leave Challenge" data-desc="For this challenge, I was working as a Data Visualization Specialist at an online business journal. My role was to create charts, visuals, and infographics as supporting content for articles. My company was writing a piece on parental leave policies across the business world." data-img="./assets/images/leave.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenFamilyLeaveChallenge_16804417092340/FamilyLeave" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Maven Analytics - Family Leave Challenge" data-desc="For this challenge, I was working as a Data Visualization Specialist at an online business journal. My role was to create charts, visuals, and infographics as supporting content for articles. My company was writing a piece on parental leave policies across the business world." data-img="./assets/images/leave.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenFamilyLeaveChallenge_16804417092340/FamilyLeave" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Maven Analytics - Family Leave Challenge" data-desc="For this challenge, I was working as a Data Visualization Specialist at an online business journal. My role was to create charts, visuals, and infographics as supporting content for articles. My company was writing a piece on parental leave policies across the business world." data-img="./assets/images/leave.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenFamilyLeaveChallenge_16804417092340/FamilyLeave" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -904,11 +844,8 @@
             <img src="./assets/images/slope.png" alt="Maven Analytics - Slope Challenge" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Maven Analytics - Slope Challenge" data-desc="The task is to build an interactive one-page dashboard which can help skiers to plan their ideal destinations with their preferred choices." data-img="./assets/images/slope.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenAnalytics-SlopeChallenge/SlopeChallenge" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Maven Analytics - Slope Challenge" data-desc="The task is to build an interactive one-page dashboard which can help skiers to plan their ideal destinations with their preferred choices." data-img="./assets/images/slope.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenAnalytics-SlopeChallenge/SlopeChallenge" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Maven Analytics - Slope Challenge" data-desc="The task is to build an interactive one-page dashboard which can help skiers to plan their ideal destinations with their preferred choices." data-img="./assets/images/slope.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MavenAnalytics-SlopeChallenge/SlopeChallenge" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -928,11 +865,8 @@
             <img src="./assets/images/loksabha.png" alt="Lok Sabha Election Analysis" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Lok Sabha Election Analysis" data-desc="A great history of Indian Lok Sabha elections since since 1952 on a single-page interactive dashboard." data-img="./assets/images/loksabha.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/inc_LokSabhadashboard/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Lok Sabha Election Analysis" data-desc="A great history of Indian Lok Sabha elections since since 1952 on a single-page interactive dashboard." data-img="./assets/images/loksabha.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/inc_LokSabhadashboard/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Lok Sabha Election Analysis" data-desc="A great history of Indian Lok Sabha elections since since 1952 on a single-page interactive dashboard." data-img="./assets/images/loksabha.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/inc_LokSabhadashboard/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -952,11 +886,8 @@
             <img src="./assets/images/odi.png" alt="ICC ODI Championship" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="ICC ODI Championship" data-desc="Interactive dashboard to analyze the performance of each team in the ODI Championship" data-img="./assets/images/odi.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ICCODIChampionshipStats2019-23/ICCODIChmp" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="ICC ODI Championship" data-desc="Interactive dashboard to analyze the performance of each team in the ODI Championship" data-img="./assets/images/odi.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ICCODIChampionshipStats2019-23/ICCODIChmp" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="ICC ODI Championship" data-desc="Interactive dashboard to analyze the performance of each team in the ODI Championship" data-img="./assets/images/odi.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/ICCODIChampionshipStats2019-23/ICCODIChmp" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -976,11 +907,8 @@
             <img src="./assets/images/sarfaraz.png" alt="Sarfaraz Khan in domestic" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Sarfaraz Khan in domestic" data-desc="Dashboard showing all achievements of Mumbai cricketer Sarfaraz Khan" data-img="./assets/images/sarfaraz.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SarfarazKhan-MrConsistent/Dashboard" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Sarfaraz Khan in domestic" data-desc="Dashboard showing all achievements of Mumbai cricketer Sarfaraz Khan" data-img="./assets/images/sarfaraz.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SarfarazKhan-MrConsistent/Dashboard" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Sarfaraz Khan in domestic" data-desc="Dashboard showing all achievements of Mumbai cricketer Sarfaraz Khan" data-img="./assets/images/sarfaraz.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/SarfarazKhan-MrConsistent/Dashboard" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1000,11 +928,8 @@
             <img src="./assets/images/bgt.png" alt="Border - Gavaskar Trophy" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Border - Gavaskar Trophy" data-desc="Dashboard to present data about the interesting stats and numbers of the much hyped Border Gavaskar trophy between India and Australia" data-img="./assets/images/bgt.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HistoryofBorder-GavaskarTrophy/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Border - Gavaskar Trophy" data-desc="Dashboard to present data about the interesting stats and numbers of the much hyped Border Gavaskar trophy between India and Australia" data-img="./assets/images/bgt.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HistoryofBorder-GavaskarTrophy/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Border - Gavaskar Trophy" data-desc="Dashboard to present data about the interesting stats and numbers of the much hyped Border Gavaskar trophy between India and Australia" data-img="./assets/images/bgt.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/HistoryofBorder-GavaskarTrophy/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1024,11 +949,8 @@
             <img src="./assets/images/arrivals.png" alt="Mumbai Airport Arrivals" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Mumbai Airport Arrivals" data-desc="A single-page interactive dashboard to present flight arrivals data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/arrivals.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIAArrivals/ArrivalDashboard" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Mumbai Airport Arrivals" data-desc="A single-page interactive dashboard to present flight arrivals data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/arrivals.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIAArrivals/ArrivalDashboard" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Mumbai Airport Arrivals" data-desc="A single-page interactive dashboard to present flight arrivals data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/arrivals.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIAArrivals/ArrivalDashboard" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1048,11 +970,8 @@
             <img src="./assets/images/departures.png" alt="Mumbai Airport Departures" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Mumbai Airport Departures" data-desc="A single-page interactive dashboard to present flight departures data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/departures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIADepartures/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Mumbai Airport Departures" data-desc="A single-page interactive dashboard to present flight departures data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/departures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIADepartures/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Mumbai Airport Departures" data-desc="A single-page interactive dashboard to present flight departures data of Mumbai International Airport for 24 hours and provide valuable insights" data-img="./assets/images/departures.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/CSMIADepartures/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1072,11 +991,8 @@
             <img src="./assets/images/cctv.png" alt="World&#x27;s most surveilled cities" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="World&#x27;s most surveilled cities" data-desc="Focused on urban safety, this visual tracks surveillance coverage, incident response times, and camera health to provide security personnel with a real-time analytical view of metropolitan monitoring systems." data-img="./assets/images/cctv.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldsMostSurveilledCities/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="World&#x27;s most surveilled cities" data-desc="Focused on urban safety, this visual tracks surveillance coverage, incident response times, and camera health to provide security personnel with a real-time analytical view of metropolitan monitoring systems." data-img="./assets/images/cctv.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldsMostSurveilledCities/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="World&#x27;s most surveilled cities" data-desc="Focused on urban safety, this visual tracks surveillance coverage, incident response times, and camera health to provide security personnel with a real-time analytical view of metropolitan monitoring systems." data-img="./assets/images/cctv.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldsMostSurveilledCities/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1096,11 +1012,8 @@
             <img src="./assets/images/gdp.png" alt="Predicted Global Economic Shift" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Predicted Global Economic Shift" data-desc="This macroeconomic visual visualizes global GDP trends and sector-wise contributions, offering a comparative analysis of national growth rates and fiscal health to track emerging market strengths and shifts." data-img="./assets/images/gdp.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/GlobalEconomicShift/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Predicted Global Economic Shift" data-desc="This macroeconomic visual visualizes global GDP trends and sector-wise contributions, offering a comparative analysis of national growth rates and fiscal health to track emerging market strengths and shifts." data-img="./assets/images/gdp.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/GlobalEconomicShift/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Predicted Global Economic Shift" data-desc="This macroeconomic visual visualizes global GDP trends and sector-wise contributions, offering a comparative analysis of national growth rates and fiscal health to track emerging market strengths and shifts." data-img="./assets/images/gdp.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/GlobalEconomicShift/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1120,11 +1033,8 @@
             <img src="./assets/images/google.png" alt="Top Google searches - India" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Top Google searches - India" data-desc="This marketing interface tracks digital presence via search trends and ad performance, measuring click-through rates, impressions, and cost-per-click to optimize online visibility and campaign return on investment." data-img="./assets/images/google.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MostGooglesearchesinIndia2022/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Top Google searches - India" data-desc="This marketing interface tracks digital presence via search trends and ad performance, measuring click-through rates, impressions, and cost-per-click to optimize online visibility and campaign return on investment." data-img="./assets/images/google.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MostGooglesearchesinIndia2022/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Top Google searches - India" data-desc="This marketing interface tracks digital presence via search trends and ad performance, measuring click-through rates, impressions, and cost-per-click to optimize online visibility and campaign return on investment." data-img="./assets/images/google.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/MostGooglesearchesinIndia2022/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1144,11 +1054,8 @@
             <img src="./assets/images/babies.png" alt="Next 1000 babies birth" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Next 1000 babies birth" data-desc="This demographic visual tracks global birth counts and fertility rates, utilizing regional breakdowns and historical trends to visualize population growth patterns and shifting reproductive statistics across various continents." data-img="./assets/images/babies.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Next1000babies/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Next 1000 babies birth" data-desc="This demographic visual tracks global birth counts and fertility rates, utilizing regional breakdowns and historical trends to visualize population growth patterns and shifting reproductive statistics across various continents." data-img="./assets/images/babies.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Next1000babies/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Next 1000 babies birth" data-desc="This demographic visual tracks global birth counts and fertility rates, utilizing regional breakdowns and historical trends to visualize population growth patterns and shifting reproductive statistics across various continents." data-img="./assets/images/babies.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Next1000babies/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1168,11 +1075,8 @@
             <img src="./assets/images/deltat.png" alt="Delta T across Indian Cities" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Delta T across Indian Cities" data-desc="This engineering-focused display monitors temperature differentials and cooling efficiency within industrial systems, using heat maps and real-time sensors to ensure optimal thermal management and equipment safety." data-img="./assets/images/deltat.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Temperaturebands/MainDB" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Delta T across Indian Cities" data-desc="This engineering-focused display monitors temperature differentials and cooling efficiency within industrial systems, using heat maps and real-time sensors to ensure optimal thermal management and equipment safety." data-img="./assets/images/deltat.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Temperaturebands/MainDB" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Delta T across Indian Cities" data-desc="This engineering-focused display monitors temperature differentials and cooling efficiency within industrial systems, using heat maps and real-time sensors to ensure optimal thermal management and equipment safety." data-img="./assets/images/deltat.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Temperaturebands/MainDB" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1192,11 +1096,8 @@
             <img src="./assets/images/battery.png" alt="EV Battery manufacturers" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="EV Battery manufacturers" data-desc="This technical overview monitors battery performance and efficiency metrics, highlighting energy density, cycle life, and charging speeds to evaluate the advancements and sustainability of modern energy storage solutions." data-img="./assets/images/battery.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top10EVBatteryManufacturersin2022/Dashboard1" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="EV Battery manufacturers" data-desc="This technical overview monitors battery performance and efficiency metrics, highlighting energy density, cycle life, and charging speeds to evaluate the advancements and sustainability of modern energy storage solutions." data-img="./assets/images/battery.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top10EVBatteryManufacturersin2022/Dashboard1" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="EV Battery manufacturers" data-desc="This technical overview monitors battery performance and efficiency metrics, highlighting energy density, cycle life, and charging speeds to evaluate the advancements and sustainability of modern energy storage solutions." data-img="./assets/images/battery.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/Top10EVBatteryManufacturersin2022/Dashboard1" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1216,11 +1117,8 @@
             <img src="./assets/images/population.png" alt="World&#x27;s Population at 8 Billion" loading="lazy">
             <span class="card-tag">Tableau</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="World&#x27;s Population at 8 Billion" data-desc="This analytical view examines global population density and migration patterns, utilizing demographic pyramids and growth projections to assess urbanization trends and the future of human distribution across regions." data-img="./assets/images/population.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldPopulationDashboard_16652300019030/PopulationDashboard" data-label="Tableau" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="World&#x27;s Population at 8 Billion" data-desc="This analytical view examines global population density and migration patterns, utilizing demographic pyramids and growth projections to assess urbanization trends and the future of human distribution across regions." data-img="./assets/images/population.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldPopulationDashboard_16652300019030/PopulationDashboard" data-label="Tableau" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="World&#x27;s Population at 8 Billion" data-desc="This analytical view examines global population density and migration patterns, utilizing demographic pyramids and growth projections to assess urbanization trends and the future of human distribution across regions." data-img="./assets/images/population.png" data-href="https://public.tableau.com/app/profile/thesayyeddanish/viz/WorldPopulationDashboard_16652300019030/PopulationDashboard" data-label="Tableau" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1240,11 +1138,8 @@
             <img src="./assets/images/vklm.png" alt="Virat Kohli vs Lasith Malinga? Who is better in IPL?" loading="lazy">
             <span class="card-tag">Python</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Virat Kohli vs Lasith Malinga? Who is better in IPL?" data-desc="This specialized IPL matchup dashboard analyzes the head-to-head records between Virat Kohli and Lasith Malinga, visualizing runs scored, strike rates, and dismissal counts to highlight their high-stakes battles on the cricket field." data-img="./assets/images/vklm.png" data-href="https://www.kaggle.com/code/thesayyeddanish/virat-malinga-in-ipl#Malinga" data-label="Python" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Virat Kohli vs Lasith Malinga? Who is better in IPL?" data-desc="This specialized IPL matchup dashboard analyzes the head-to-head records between Virat Kohli and Lasith Malinga, visualizing runs scored, strike rates, and dismissal counts to highlight their high-stakes battles on the cricket field." data-img="./assets/images/vklm.png" data-href="https://www.kaggle.com/code/thesayyeddanish/virat-malinga-in-ipl#Malinga" data-label="Python" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Virat Kohli vs Lasith Malinga? Who is better in IPL?" data-desc="This specialized IPL matchup dashboard analyzes the head-to-head records between Virat Kohli and Lasith Malinga, visualizing runs scored, strike rates, and dismissal counts to highlight their high-stakes battles on the cricket field." data-img="./assets/images/vklm.png" data-href="https://www.kaggle.com/code/thesayyeddanish/virat-malinga-in-ipl#Malinga" data-label="Python" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1264,11 +1159,8 @@
             <img src="./assets/images/vkrs.png" alt="Who is a better batsman? Virat Kohli or Rohit Sharma?" loading="lazy">
             <span class="card-tag">Python</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Who is a better batsman? Virat Kohli or Rohit Sharma?" data-desc="This comparative dashboard explores the &quot;rivalry&quot; between India’s two premier batsmen, visualizing their impact through runs scored, boundaries, and leadership stats to determine their relative contributions to international cricket." data-img="./assets/images/vkrs.png" data-href="https://www.kaggle.com/code/thesayyeddanish/kohli-v-rohit#Virat-Kohli-vs-Others" data-label="Python" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Who is a better batsman? Virat Kohli or Rohit Sharma?" data-desc="This comparative dashboard explores the &quot;rivalry&quot; between India’s two premier batsmen, visualizing their impact through runs scored, boundaries, and leadership stats to determine their relative contributions to international cricket." data-img="./assets/images/vkrs.png" data-href="https://www.kaggle.com/code/thesayyeddanish/kohli-v-rohit#Virat-Kohli-vs-Others" data-label="Python" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Who is a better batsman? Virat Kohli or Rohit Sharma?" data-desc="This comparative dashboard explores the &quot;rivalry&quot; between India’s two premier batsmen, visualizing their impact through runs scored, boundaries, and leadership stats to determine their relative contributions to international cricket." data-img="./assets/images/vkrs.png" data-href="https://www.kaggle.com/code/thesayyeddanish/kohli-v-rohit#Virat-Kohli-vs-Others" data-label="Python" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1288,11 +1180,8 @@
             <img src="./assets/images/stvk.png" alt="Similarities of records between Sachin Tendulkar and Virat Kohli" loading="lazy">
             <span class="card-tag">Python</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Similarities of records between Sachin Tendulkar and Virat Kohli" data-desc="This statistical comparison dashboard pits two batting legends against each other, analyzing their career averages, centuries, and performance across formats to highlight the distinct dominance of these cricketing icons." data-img="./assets/images/stvk.png" data-href="https://www.kaggle.com/code/thesayyeddanish/odi-sachin-vs-kohli" data-label="Python" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Similarities of records between Sachin Tendulkar and Virat Kohli" data-desc="This statistical comparison dashboard pits two batting legends against each other, analyzing their career averages, centuries, and performance across formats to highlight the distinct dominance of these cricketing icons." data-img="./assets/images/stvk.png" data-href="https://www.kaggle.com/code/thesayyeddanish/odi-sachin-vs-kohli" data-label="Python" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Similarities of records between Sachin Tendulkar and Virat Kohli" data-desc="This statistical comparison dashboard pits two batting legends against each other, analyzing their career averages, centuries, and performance across formats to highlight the distinct dominance of these cricketing icons." data-img="./assets/images/stvk.png" data-href="https://www.kaggle.com/code/thesayyeddanish/odi-sachin-vs-kohli" data-label="Python" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1312,11 +1201,8 @@
             <img src="./assets/images/invest.png" alt="Investment Portfolio Tracker" loading="lazy">
             <span class="card-tag">Excel</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Investment Portfolio Tracker" data-desc="This financial tracker monitors asset allocation and portfolio returns, providing a clear breakdown of market gains, losses, and risk levels to help investors manage their wealth and performance." data-img="./assets/images/invest.png" data-href="#" data-label="Excel" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Investment Portfolio Tracker" data-desc="This financial tracker monitors asset allocation and portfolio returns, providing a clear breakdown of market gains, losses, and risk levels to help investors manage their wealth and performance." data-img="./assets/images/invest.png" data-href="#" data-label="Excel" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Investment Portfolio Tracker" data-desc="This financial tracker monitors asset allocation and portfolio returns, providing a clear breakdown of market gains, losses, and risk levels to help investors manage their wealth and performance." data-img="./assets/images/invest.png" data-href="#" data-label="Excel" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1336,11 +1222,8 @@
             <img src="./assets/images/watchlist.png" alt="Watchlist Tracker" loading="lazy">
             <span class="card-tag">Excel</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="Watchlist Tracker" data-desc="This clean, mobile-oriented stock watchlist tracks real-time price movements and percentage changes for major tech equities and indices, utilizing color-coded indicators to help investors quickly monitor daily market volatility and performance." data-img="./assets/images/watchlist.png" data-href="#" data-label="Excel" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="Watchlist Tracker" data-desc="This clean, mobile-oriented stock watchlist tracks real-time price movements and percentage changes for major tech equities and indices, utilizing color-coded indicators to help investors quickly monitor daily market volatility and performance." data-img="./assets/images/watchlist.png" data-href="#" data-label="Excel" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="Watchlist Tracker" data-desc="This clean, mobile-oriented stock watchlist tracks real-time price movements and percentage changes for major tech equities and indices, utilizing color-coded indicators to help investors quickly monitor daily market volatility and performance." data-img="./assets/images/watchlist.png" data-href="#" data-label="Excel" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1360,11 +1243,8 @@
             <img src="./assets/images/wtc25.png" alt="World Test Championship Calculator" loading="lazy">
             <span class="card-tag">Excel</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="World Test Championship Calculator" data-desc="This sports analytics view tracks the World Test Championship 2025 cycle, displaying points percentages, series wins, and team rankings to predict which nations will qualify for the prestigious final." data-img="./assets/images/wtc25.png" data-href="#" data-label="Excel" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="World Test Championship Calculator" data-desc="This sports analytics view tracks the World Test Championship 2025 cycle, displaying points percentages, series wins, and team rankings to predict which nations will qualify for the prestigious final." data-img="./assets/images/wtc25.png" data-href="#" data-label="Excel" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="World Test Championship Calculator" data-desc="This sports analytics view tracks the World Test Championship 2025 cycle, displaying points percentages, series wins, and team rankings to predict which nations will qualify for the prestigious final." data-img="./assets/images/wtc25.png" data-href="#" data-label="Excel" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1384,11 +1264,8 @@
             <img src="./assets/images/preipl23.png" alt="IPl 2023 - Team Analysis" loading="lazy">
             <span class="card-tag">Others</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="IPl 2023 - Team Analysis" data-desc="Focused on sports data, this visual summarizes the 2023 IPL season, highlighting player statistics, team standings, and match outcomes to provide a comprehensive look at tournament performance metrics." data-img="./assets/images/preipl23.png" data-href="https://drive.google.com/file/d/19sCOWMpQLT8VN6IGa7TZ17SgHGYSXCR_/view?usp=share_link" data-label="Others" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="IPl 2023 - Team Analysis" data-desc="Focused on sports data, this visual summarizes the 2023 IPL season, highlighting player statistics, team standings, and match outcomes to provide a comprehensive look at tournament performance metrics." data-img="./assets/images/preipl23.png" data-href="https://drive.google.com/file/d/19sCOWMpQLT8VN6IGa7TZ17SgHGYSXCR_/view?usp=share_link" data-label="Others" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="IPl 2023 - Team Analysis" data-desc="Focused on sports data, this visual summarizes the 2023 IPL season, highlighting player statistics, team standings, and match outcomes to provide a comprehensive look at tournament performance metrics." data-img="./assets/images/preipl23.png" data-href="https://drive.google.com/file/d/19sCOWMpQLT8VN6IGa7TZ17SgHGYSXCR_/view?usp=share_link" data-label="Others" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1408,11 +1285,8 @@
             <img src="./assets/images/preauc23.png" alt="IPL 2023 - Pre Auction Analysis" loading="lazy">
             <span class="card-tag">Others</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="IPL 2023 - Pre Auction Analysis" data-desc="This specialized dashboard reviews 2023 auction data, tracking bidding behavior, final sale prices, and item categories to provide insights into market demand and high-value asset performance trends." data-img="./assets/images/preauc23.png" data-href="https://drive.google.com/file/d/13hYzSjELreVWIJFupf6RObkUbGvMxsG_/view?usp=share_link" data-label="Others" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="IPL 2023 - Pre Auction Analysis" data-desc="This specialized dashboard reviews 2023 auction data, tracking bidding behavior, final sale prices, and item categories to provide insights into market demand and high-value asset performance trends." data-img="./assets/images/preauc23.png" data-href="https://drive.google.com/file/d/13hYzSjELreVWIJFupf6RObkUbGvMxsG_/view?usp=share_link" data-label="Others" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="IPL 2023 - Pre Auction Analysis" data-desc="This specialized dashboard reviews 2023 auction data, tracking bidding behavior, final sale prices, and item categories to provide insights into market demand and high-value asset performance trends." data-img="./assets/images/preauc23.png" data-href="https://drive.google.com/file/d/13hYzSjELreVWIJFupf6RObkUbGvMxsG_/view?usp=share_link" data-label="Others" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1432,11 +1306,8 @@
             <img src="./assets/images/prewpl23.png" alt="WPL 2023 - Post auction teams" loading="lazy">
             <span class="card-tag">Others</span>
             <div class="thumb-actions">
-              <button class="card-eye" data-preview-btn data-title="WPL 2023 - Post auction teams" data-desc="This sports analytics dashboard provides a detailed review of the Women&#x27;s Premier League (WPL) 2023 season, visualizing team standings, player performances, and key match statistics to celebrate the tournament&#x27;s inaugural success." data-img="./assets/images/prewpl23.png" data-href="https://drive.google.com/file/d/1ZRlxlmtm5hrxuUg78RYoGLWWfv7DDc0d/view?usp=share_link" data-label="Others" aria-label="Preview project">
-                <ion-icon name="eye-outline"></ion-icon>
-              </button>
-              <button class="card-spark" data-preview-btn data-title="WPL 2023 - Post auction teams" data-desc="This sports analytics dashboard provides a detailed review of the Women&#x27;s Premier League (WPL) 2023 season, visualizing team standings, player performances, and key match statistics to celebrate the tournament&#x27;s inaugural success." data-img="./assets/images/prewpl23.png" data-href="https://drive.google.com/file/d/1ZRlxlmtm5hrxuUg78RYoGLWWfv7DDc0d/view?usp=share_link" data-label="Others" aria-label="Open project preview">
-                <ion-icon name="sparkles"></ion-icon>
+              <button class="card-view" data-preview-btn data-title="WPL 2023 - Post auction teams" data-desc="This sports analytics dashboard provides a detailed review of the Women&#x27;s Premier League (WPL) 2023 season, visualizing team standings, player performances, and key match statistics to celebrate the tournament&#x27;s inaugural success." data-img="./assets/images/prewpl23.png" data-href="https://drive.google.com/file/d/1ZRlxlmtm5hrxuUg78RYoGLWWfv7DDc0d/view?usp=share_link" data-label="Others" aria-label="View project">
+                <ion-icon name="expand-outline"></ion-icon>
               </button>
             </div>
             <div class="thumb-tooltip">
@@ -1644,7 +1515,7 @@
   <p>&copy; <span id="year"></span> Danish Sayyed. Built with glass, gradients, and a lot of coffee.</p>
 </footer>
 
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js?v=4"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

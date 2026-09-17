@@ -1,20 +1,25 @@
 /*=============================================
   DANISH SAYYED — PORTFOLIO SCRIPT
+  Each feature runs in its own DOMContentLoaded
+  listener so one failing block can never take
+  down the rest of the page's interactivity.
 =============================================*/
+
 document.addEventListener('DOMContentLoaded', () => {
-
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   /* ---------- PRELOADER ---------- */
   const preloader = document.querySelector('[data-preloader]');
   window.addEventListener('load', () => {
     setTimeout(() => preloader && preloader.classList.add('is-hidden'), 500);
   });
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- CUSTOM CURSOR (data theme) ---------- */
   const cross = document.querySelector('[data-cursor-cross]');
   const trailWrap = document.querySelector('[data-cursor-trail]');
-  if (cross && trailWrap && !reduceMotion && matchMedia('(hover:hover)').matches) {
+  if (cross && trailWrap && !reduceMotion) {
     const TRAIL_LEN = 7;
     const nodes = [];
     for (let i = 0; i < TRAIL_LEN; i++) {
@@ -53,7 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       el.addEventListener('mouseleave', () => cross.classList.remove('is-active'));
     });
   }
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* ---------- MAGNETIC BUTTONS ---------- */
   if (!reduceMotion && matchMedia('(hover:hover)').matches) {
     document.querySelectorAll('[data-magnetic]').forEach(el => {
       el.addEventListener('mousemove', e => {
@@ -65,18 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
       el.addEventListener('mouseleave', () => { el.style.transform = ''; });
     });
   }
+});
 
-  /* ---------- SERVICE CARD SPOTLIGHT ---------- */
-  if (matchMedia('(hover:hover)').matches) {
-    document.querySelectorAll('.service-card').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const r = card.getBoundingClientRect();
-        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
-      });
-    });
-  }
-
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- BACKGROUND BLOB PARALLAX ---------- */
   if (!reduceMotion) {
     const blobs = document.querySelectorAll('.blob');
@@ -89,7 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- NAV ---------- */
   const nav = document.querySelector('[data-nav]');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -153,7 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('[data-to-top]')?.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- SCROLL REVEAL ---------- */
   const revealEls = document.querySelectorAll('[data-reveal]');
   const io = new IntersectionObserver((entries) => {
@@ -168,7 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.setProperty('--i', i % 8);
     io.observe(el);
   });
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- COUNT UP ---------- */
   const counters = document.querySelectorAll('[data-count]');
   const cIo = new IntersectionObserver((entries) => {
@@ -190,7 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.6 });
   counters.forEach(el => cIo.observe(el));
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- SKILL DONUT CHARTS ---------- */
   const donuts = document.querySelectorAll('[data-donut]');
   const dIo = new IntersectionObserver((entries) => {
@@ -219,7 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.4 });
   donuts.forEach(el => dIo.observe(el));
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- PROJECT PREVIEW MODAL ---------- */
   const previewOverlay = document.querySelector('[data-preview-overlay]');
   if (previewOverlay) {
@@ -248,7 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     window.addEventListener('keydown', e => { if (e.key === 'Escape') closePreview(); });
   }
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- PROJECT FILTER + LOAD MORE ---------- */
   const filterBtns = document.querySelectorAll('[data-filter-btn]');
   const cards = Array.from(document.querySelectorAll('[data-filter-item]'));
@@ -283,7 +302,10 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFilter();
   });
   applyFilter();
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- PROJECT CARD TILT ---------- */
   if (!reduceMotion && matchMedia('(hover:hover)').matches) {
     document.querySelectorAll('.project-card').forEach(card => {
@@ -296,7 +318,10 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseleave', () => { card.style.transform = ''; });
     });
   }
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- TESTIMONIALS CAROUSEL ---------- */
   const track = document.querySelector('[data-testi-track]');
   if (track) {
@@ -423,7 +448,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape') overlay?.classList.remove('is-open');
     });
   }
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* ---------- CONTACT FORM ---------- */
   const form = document.querySelector('[data-form]');
   if (form) {
@@ -455,5 +483,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
 });
